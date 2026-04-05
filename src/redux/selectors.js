@@ -1,1 +1,3 @@
-// selectors.js: Інструменти для спрощення отримання даних у компонентах.
+export const getTodos = state => {
+    return state
+}

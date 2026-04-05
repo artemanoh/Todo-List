@@ -12,7 +12,7 @@ const todosReducer = (state = todos, action) => {
     case ACTION_TYPES.add:
       return [...state, action.payload];
     case ACTION_TYPES.remove:
-      return state.filter(todos => todos.id !== action.id);
+      return state.filter(todos => todos.id !== action.payload);
     case ACTION_TYPES.change:
       return state.map(todo => todo.id === action.payload ? {...todo, completed: !todo.completed} : todo)
 
